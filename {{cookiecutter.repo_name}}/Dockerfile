@@ -9,14 +9,14 @@ ENV PYTHONFAULTHANDLER 1
 
 FROM base AS python-deps
 
-# Install pipenv and compilation dependencies
-RUN pip install pipenv
+# Install poetry and compilation dependencies
+RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 RUN apt-get update && apt-get install -y --no-install-recommends gcc
 
 # Install python dependencies in /.venv
-COPY Pipfile .
-COPY Pipfile.lock .
-RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy
+COPY pyproject.toml .
+COPY poetry.lock .
+RUN POETRY_VIRTUALENVS_IN_PROJECT=1 poetry install
 
 
 FROM base AS runtime

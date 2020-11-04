@@ -1,8 +1,9 @@
 # Python Best Practices Cookiecutter
 
-Best practices [cookiecutter](https://github.com/audreyr/cookiecutter) template as described in this [blogpost](https://sourcery.ai/blog/python-best-practices/).
+Fork of the best practices [cookiecutter](https://github.com/audreyr/cookiecutter) template provided by [Sourcery.AI](https://github.com/sourcery-ai/python-best-practices-cookiecutter), using [poetry](https://python-poetry.org/) for dependency management.
 
 ## Features
+- Dependendy management with [poetry](https://python-poetry.org/)
 - Testing with [pytest](https://docs.pytest.org/en/latest/)
 - Formatting with [black](https://github.com/psf/black)
 - Import sorting with [isort](https://github.com/timothycrosley/isort)
@@ -14,15 +15,15 @@ Best practices [cookiecutter](https://github.com/audreyr/cookiecutter) template 
 
 ## Quickstart
 ```sh
-# Install pipx if pipenv and cookiecutter are not installed
+# Install pipx if poetry and cookiecutter are not installed
 python3 -m pip install pipx
 python3 -m pipx ensurepath
 
-# Install pipenv using pipx
-pipx install pipenv
+# Install poetry using pipx
+pipx install poetry
 
 # Use cookiecutter to create project from this template
-pipx run cookiecutter gh:sourcery-ai/python-best-practices-cookiecutter
+pipx run cookiecutter gh:bcbernardo/python-best-practices-cookiecutter
 
 # Enter project directory
 cd <repo_name>
@@ -31,9 +32,9 @@ cd <repo_name>
 git init
 
 # Install dependencies
-pipenv install --dev
+poetry install
 
 # Setup pre-commit and pre-push hooks
-pipenv run pre-commit install -t pre-commit
-pipenv run pre-commit install -t pre-push
+poetry run pre-commit install -t pre-commit
+poetry run pre-commit install -t pre-push
 ```
