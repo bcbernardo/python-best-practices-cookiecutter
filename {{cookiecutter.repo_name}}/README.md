@@ -11,4 +11,4 @@ poetry run pre-commit install -t pre-push
 ```
 
 ## Credits
-This package was created with Cookiecutter and the [sourcery-ai/python-best-practices-cookiecutter](https://github.com/sourcery-ai/python-best-practices-cookiecutter) project template.
+This package was created with Cookiecutter and the [bcbernardo/python-best-practices-cookiecutter](https://github.com/bcbernardo/python-best-practices-cookiecutter) project template.
