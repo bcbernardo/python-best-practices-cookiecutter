@@ -28,7 +28,7 @@ pytest-cov = "*"
 
 [tool.black]
 
-target-version = ["py36", "py37", "py38"]
+target-version = ["py36", "py37", "py38", "py39"]
 skip-string-normalization = true
 
 [build-system]
