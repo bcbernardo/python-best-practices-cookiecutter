@@ -30,7 +30,6 @@ pytest-cov = "*"
 
 line-length = 79
 target-version = ["py36", "py37", "py38", "py39"]
-skip-string-normalization = true
 
 [build-system]
 
