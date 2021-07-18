@@ -1,9 +1,11 @@
-import os
 import sys
 
 
 def set_python_version():
-    python_version = str(sys.version_info.major) + "." + str(sys.version_info.minor)
+    python_version = "{}.{}".format(
+        sys.version_info.major,
+        sys.version_info.minor,
+    )
 
     file_names = ["Dockerfile", "pyproject.toml", ".github/workflows/test.yml"]
     for file_name in file_names:

@@ -26,7 +26,7 @@ pipx install poetry
 pipx run cookiecutter gh:bcbernardo/python-best-practices-cookiecutter
 
 # Enter project directory
-cd <repo_name>
+cd <package_name>
 
 # Initialise git repo
 git init

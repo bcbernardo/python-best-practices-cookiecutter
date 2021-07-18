@@ -1,6 +1,9 @@
 # {{cookiecutter.project_name}}
 
-## Setup
+{{cookiecutter.project_description}}
+
+## Install
+
 ```sh
 # Install dependencies
 poetry install
