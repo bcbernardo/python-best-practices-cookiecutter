@@ -1,5 +1,5 @@
 {
-  "project_name": "Best Practices",
+  "project_name": "My Beautiful Project",
   "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_description": "A project to do awesome stuff.",
   "license": [
