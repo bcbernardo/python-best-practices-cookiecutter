@@ -15,5 +15,7 @@
     "MPL-2.0"
   ],
   "author_name": "Joao da Silva",
-  "author_email": "joao@domain.com"
+  "author_email": "joao@domain.com",
+  "year": "{% now 'utc', '%Y' %}",
+  "_extensions": ["jinja2_time.TimeExtension"]
 }

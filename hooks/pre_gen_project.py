@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2019 Sourcery
+# SPDX-FileCopyrightText: 2021 Bernardo C Baron <bc.bernardo@hotmail.com>
+#
+# SPDX-License-Identifier: MIT
+
+
 import re
 import sys
 

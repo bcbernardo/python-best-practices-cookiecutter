@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: {{cookiecutter.year}} {{cookiecutter.author_name}} <{{cookiecutter.author_email}}>
+#
+# SPDX-License-Identifier: {{cookiecutter.license}}
+
+
 # http://editorconfig.org/#file-format-details
 root = true
 

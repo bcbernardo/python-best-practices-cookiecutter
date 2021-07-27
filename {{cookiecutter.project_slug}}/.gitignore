@@ -1,5 +1,13 @@
+# SPDX-FileCopyrightText: 2013-{{cookiecutter.year}} Toptal
+# SPDX-FileCopyrightText: {{cookiecutter.year}} {{cookiecutter.author_name}} <{{cookiecutter.author_email}}>
+#
+# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: {{cookiecutter.license}}
+
+
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
+# All changes are licensed under MIT
 
 ### Python ###
 # Byte-compiled / optimized / DLL files

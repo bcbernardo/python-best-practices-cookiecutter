@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2019 Sourcery
+SPDX-FileCopyrightText: 2021 Bernardo C Baron <bc.bernardo@hotmail.com>
+
+SPDX-License-Identifier: MIT
+-->
+
 # Python Best Practices Cookiecutter
 
 Fork of the best practices [cookiecutter](https://github.com/audreyr/cookiecutter) template provided by [Sourcery.AI](https://github.com/sourcery-ai/python-best-practices-cookiecutter), using [poetry](https://python-poetry.org/) for dependency management.
