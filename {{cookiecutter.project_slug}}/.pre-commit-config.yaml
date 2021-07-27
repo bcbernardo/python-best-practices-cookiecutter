@@ -9,12 +9,19 @@ repos:
   hooks:
   - id: reuse
     name: reuse
-    stages: [commit]
-    language: system
-    entry: poetry run reuse lint
     description:
       "Lint the project directory for compliance with the REUSE Specification"
+    language: system
+    entry: poetry run reuse lint
     pass_filenames: false
+
+  - id: pycln
+    name: pycln
+    description:
+      "A formatter for finding and removing unused import statements."
+    language: system
+    entry: poetry run pycln
+    types: [python]
 
   - id: isort
     name: isort
