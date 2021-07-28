@@ -1,3 +1,15 @@
-# SPDX-FileCopyrightText: {{cookiecutter.year}} {{cookiecutter.author_name}} <{{cookiecutter.author_email}}>
+# SPDX-FileCopyrightText: 2021 Fiquem Sabendo <contato@fiquemsabendo.com.br>
 #
-# SPDX-License-Identifier: {{cookiecutter.license}}
+# SPDX-License-Identifier: NONE
+
+
+import pytest
+
+
+# Insert your fixtures here
+
+
+@pytest.fixtures()
+def example_fixture():
+    """A sample fixture."""
+    pass  # noqa: WPS420
