@@ -33,6 +33,7 @@ pytest = "*"
 pytest-cov = "*"
 pyupgrade = "*"
 reuse = "*"
+wemake-python-styleguide="*"
 
 [tool.black]
 
