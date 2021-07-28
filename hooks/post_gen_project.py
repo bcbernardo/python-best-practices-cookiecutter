@@ -42,11 +42,14 @@ def get_license(license: str, out_dir: Union[str, Path]) -> None:
     )
     http = urllib3.PoolManager()
     out_path = Path(out_dir, license + ".txt")
-    if not out_path.is_file() and license != "NONE":
+    if not out_path.is_file() and license != "LicenseRef-NONE":
         with \
                 http.request("GET", spdx_license_url) as r, \
                 open(out_path, "w") as out_file:
             shutil.copyfileobj(r.data, out_file)
+    elif license == "LicenseRef-NONE":
+        with open(out_path, "w") as out_file:
+            out_file.write("All rights reserved.")
 
 
 def main() -> None:
