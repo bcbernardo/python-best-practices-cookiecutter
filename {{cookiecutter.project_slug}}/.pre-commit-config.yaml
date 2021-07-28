@@ -23,6 +23,16 @@ hooks:
     entry: poetry run reuse lint
     pass_filenames: false
 
+  - id: pyupgrade
+    name: pyupgrade
+    description: Automatically upgrade syntax for newer versions.
+    language: system
+    entry: poetry run pyupgrade
+    types: [python]
+    # for backward compatibility
+    files: ''
+    minimum_pre_commit_version: 0.15.0
+
   - id: pycln
     name: pycln
     description:
