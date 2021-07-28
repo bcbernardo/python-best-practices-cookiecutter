@@ -4,7 +4,9 @@
 # SPDX-License-Identifier: MIT
 
 
+import os
 import shutil
+import stat
 import sys
 import urllib3
 from pathlib import Path
@@ -52,9 +54,17 @@ def get_license(license: str, out_dir: Union[str, Path]) -> None:
             out_file.write("All rights reserved.")
 
 
+def make_main_executable():
+    """Changes permissions of __main__.py file to make it executable."""
+    main_file = Path("src", "{{cookiecutter.package_name}}", "__main__.py")
+    st = os.stat(main_file)
+    os.chmod(main_file, st.st_mode | stat.S_IEXEC)
+
+
 def main() -> None:
     set_python_version()
     get_license(LICENSE, LICENSES_DIR)
+    make_main_executable()
     print(SUCCESS + "Project successfully initialized" + TERMINATOR)
 
 
