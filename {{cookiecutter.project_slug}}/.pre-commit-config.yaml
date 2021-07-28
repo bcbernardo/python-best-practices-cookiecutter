@@ -47,10 +47,6 @@ repos:
     files: '^requirements.*txt$'
   - id: trailing-whitespace
     args: ['--markdown-linebreak-ext=md']
-- repo: https://github.com/hadolint/hadolint
-  rev: v2.6.0
-  hooks:
-  - id: hadolint
 - repo: local
   hooks:
   - id: reuse
