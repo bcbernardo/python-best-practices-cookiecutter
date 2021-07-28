@@ -42,7 +42,7 @@ def get_license(license: str, out_dir: Union[str, Path]) -> None:
     )
     http = urllib3.PoolManager()
     out_path = Path(out_dir, license)
-    if not out_path.is_file():
+    if not out_path.is_file() and license != "NONE":
         with \
                 http.request("GET", spdx_license_url) as r, \
                 open(out_path, "w") as out_file:
