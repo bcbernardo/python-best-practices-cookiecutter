@@ -35,7 +35,7 @@ pytest = "*"
 pytest-cov = "*"
 pyupgrade = "*"
 reuse = "*"
-safety-db = "*"
+safety = "^1.10.3"
 wemake-python-styleguide="*"
 
 [tool.black]

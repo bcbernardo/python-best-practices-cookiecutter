@@ -98,7 +98,7 @@ repos:
   - id: python-safety-dependencies-check
     name: safety
     description: "Run safety on project packages."
-    entry: bash -c 'poetry run pip freeze | poetry run safety check --stdin'
+    entry: bash -c 'poetry export -f requirements.txt | poetry run safety check --stdin'
     pass_filenames: false
     language: system
     files: 'requirements|poetry\.lock|pyproject'
