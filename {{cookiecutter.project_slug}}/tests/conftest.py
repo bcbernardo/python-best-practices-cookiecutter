@@ -9,7 +9,7 @@ import pytest
 # Insert your fixtures here
 
 
-@pytest.fixtures()
+@pytest.fixture()
 def example_fixture():
     """A sample fixture."""
     pass  # noqa: WPS420
