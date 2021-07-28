@@ -1,6 +1,6 @@
 {
   "project_name": "My Beautiful Project",
-  "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "project_slug": "{{ cookiecutter.project_name|slugify }}",
   "package_name": "{{ cookiecutter.project_slug|replace('-', '') }}",
   "project_description": "A project to do awesome stuff.",
   "license": [
@@ -17,5 +17,8 @@
   "author_name": "Joao da Silva",
   "author_email": "joao@domain.com",
   "year": "{% now 'utc', '%Y' %}",
-  "_extensions": ["jinja2_time.TimeExtension"]
+  "_extensions": [
+    "jinja2_time.TimeExtension",
+    "cookiecutter.extensions.SlugifyExtension"
+  ]
 }
