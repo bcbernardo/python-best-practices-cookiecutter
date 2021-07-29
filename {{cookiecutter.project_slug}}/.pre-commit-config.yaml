@@ -48,6 +48,11 @@ repos:
     files: '^requirements.*txt$'
   - id: trailing-whitespace
     args: ['--markdown-linebreak-ext=md']
+- repo: https://github.com/pryorda/dockerfilelint-precommit-hooks
+  rev: v0.1.0
+  hooks:
+  - id: dockerfilelint
+    stages: [commit]
 - repo: local
   hooks:
   - id: reuse
