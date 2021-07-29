@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: {{cookiecutter.license}}
 
 
+"""Core package functionalities."""
+
+
 def main() -> None:
     """Main program entrypoint."""
     raise NotImplementedError

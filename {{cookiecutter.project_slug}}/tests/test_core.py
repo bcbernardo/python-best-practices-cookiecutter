@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: {{cookiecutter.license}}
 
 
+"""Tests cases for package's core functionalities."""
+
+
 import pytest
 
 from {{cookiecutter.package_name}}.core import main
