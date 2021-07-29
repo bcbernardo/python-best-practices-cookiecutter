@@ -20,12 +20,14 @@ repos:
   - id: check-case-conflict
   - id: check-json
   - id: check-shebang-scripts-are-executable
+    exclude_types: [python]
   - id: check-symlinks
   - id: check-toml
   - id: check-xml
   - id: check-yaml
   - id: destroyed-symlinks
   - id: end-of-file-fixer
+    exclude_types: [python]
   - id: fix-byte-order-marker
   - id: fix-encoding-pragma
     args: ['--remove']
