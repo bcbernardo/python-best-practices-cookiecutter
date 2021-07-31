@@ -25,6 +25,7 @@ python = "~{python_version}"
 
 bandit = "*"
 black = "==20.8b1"
+blacken-docs = "*"
 dlint = "*"
 flake8 = "*"
 isort = "*"

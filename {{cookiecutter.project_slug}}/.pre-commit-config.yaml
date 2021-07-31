@@ -96,6 +96,13 @@ repos:
     language: system
     entry: poetry run black
     types: [python]
+  - id: blacken-docs
+    name: blacken-docs
+    description: "Run `black` on python code blocks in documentation files."
+    stages: [commit]
+    language: system
+    entry: poetry run blacken-docs
+    files: '\.(rst|md|markdown|tex)$'
   - id: flake8
     name: flake8
     stages: [commit]
