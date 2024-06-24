@@ -3,6 +3,9 @@
 # SPDX-License-Identifier: {{cookiecutter.license}}
 
 
+"""Reusable fixtures for pytest test cases."""
+
+
 import pytest
 
 

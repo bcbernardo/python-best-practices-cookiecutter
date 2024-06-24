@@ -20,12 +20,14 @@ repos:
   - id: check-case-conflict
   - id: check-json
   - id: check-shebang-scripts-are-executable
+    exclude_types: [python]
   - id: check-symlinks
   - id: check-toml
   - id: check-xml
   - id: check-yaml
   - id: destroyed-symlinks
   - id: end-of-file-fixer
+    exclude_types: [python]
   - id: fix-byte-order-marker
   - id: fix-encoding-pragma
     args: ['--remove']
@@ -48,6 +50,15 @@ repos:
     files: '^requirements.*txt$'
   - id: trailing-whitespace
     args: ['--markdown-linebreak-ext=md']
+- repo: https://github.com/zricethezav/gitleaks
+  rev: v7.5.0
+  hooks:
+  - id: gitleaks
+- repo: https://github.com/pryorda/dockerfilelint-precommit-hooks
+  rev: v0.1.0
+  hooks:
+  - id: dockerfilelint
+    stages: [commit]
 - repo: local
   hooks:
   - id: reuse
@@ -85,6 +96,13 @@ repos:
     language: system
     entry: poetry run black
     types: [python]
+  - id: blacken-docs
+    name: blacken-docs
+    description: "Run `black` on python code blocks in documentation files."
+    stages: [commit]
+    language: system
+    entry: poetry run blacken-docs
+    files: '\.(rst|md|markdown|tex)$'
   - id: flake8
     name: flake8
     stages: [commit]

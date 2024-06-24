@@ -6,6 +6,9 @@
     ],
     "python.formatting.provider": "black",
     "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+    "python.linting.banditArgs": [
+      "-configfile=${workspaceFolder}/.bandit"
+    ],
     "python.linting.banditEnabled": true,
     "python.linting.banditPath": "${workspaceFolder}/.venv/bin/bandit",
     "python.linting.flake8Args": [
@@ -18,17 +21,16 @@
       "**/site-packages/**/*.py",
       ".venv/**/*.py"
     ],
-    "python.linting.isortArgs": [
-      "--config=${workspaceFolder}/pyproject.toml"
-    ],
-    "python.linting.isortEnabled": true,
-    "python.formatting.isortPath": "${workspaceFolder}/.venv/bin/isort",
     "python.linting.mypyArgs": [
       "--config-file=${workspaceFolder}/pyproject.toml"
     ],
     "python.linting.mypyEnabled": true,
     "python.linting.mypyPath": "${workspaceFolder}/.venv/bin/mypy",
     "python.linting.pylintEnabled": false,
+    "python.sortImports.args": [
+      "--config=${workspaceFolder}/pyproject.toml"
+    ],
+    "python.sortImports.path": "~/.local/bin/isort",
     "python.testing.pytestArgs": [
       "--rootdir=${workspaceFolder}"
     ],

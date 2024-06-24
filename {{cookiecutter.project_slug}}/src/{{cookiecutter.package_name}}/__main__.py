@@ -5,6 +5,9 @@
 # SPDX-License-Identifier: {{cookiecutter.license}}
 
 
+"""Entrypoint for running {{cookiecutter.package_name}} as an executable,"""
+
+
 from {{cookiecutter.package_name}}.core import main
 
 if __name__ == "__main__":
